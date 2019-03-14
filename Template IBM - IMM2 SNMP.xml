@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <zabbix_export>
-    <version>3.0</version>
-    <date>2016-08-22T12:27:54Z</date>
+    <version>4.0</version>
+    <date>2019-03-14T04:16:42Z</date>
     <groups>
         <group>
-            <name>My Templates</name>
+            <name>Templates</name>
         </group>
     </groups>
     <templates>
@@ -14,7 +14,7 @@
             <description/>
             <groups>
                 <group>
-                    <name>My Templates</name>
+                    <name>Templates</name>
                 </group>
             </groups>
             <applications>
@@ -33,17 +33,15 @@
                     <name>Number of Fan</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.3.1.0</snmp_oid>
                     <key>fanNumber</key>
                     <delay>3600</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>7d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -51,11 +49,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -71,22 +66,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>System health state</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.4.1.0</snmp_oid>
                     <key>systemHealthStat</key>
                     <delay>300</delay>
-                    <history>14</history>
-                    <trends>365</trends>
+                    <history>14d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -94,11 +108,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -116,22 +127,41 @@
                         <name>IMM2-systemhealt</name>
                     </valuemap>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Number of temperature sensor</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.1.0</snmp_oid>
                     <key>tempSensorNumber</key>
                     <delay>3600</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>7d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -139,11 +169,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -159,22 +186,41 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
                 <item>
                     <name>Number of Voltage sensor</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <multiplier>0</multiplier>
                     <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.2.1.0</snmp_oid>
                     <key>voltNumber</key>
                     <delay>3600</delay>
-                    <history>7</history>
-                    <trends>365</trends>
+                    <history>7d</history>
+                    <trends>365d</trends>
                     <status>0</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units/>
-                    <delta>0</delta>
                     <snmpv3_contextname/>
                     <snmpv3_securityname/>
                     <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -182,11 +228,8 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
-                    <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
                     <password/>
@@ -202,6 +245,27 @@
                     </applications>
                     <valuemap/>
                     <logtimefmt/>
+                    <preprocessing/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <output_format>0</output_format>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
+                    <master_item/>
                 </item>
             </items>
             <discovery_rules>
@@ -209,7 +273,7 @@
                     <name>Fan sensor</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.3.2.1.2</snmp_oid>
+                    <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.2.3.51.3.1.3.2.1.2]</snmp_oid>
                     <key>fanDesc</key>
                     <delay>60</delay>
                     <status>0</status>
@@ -221,7 +285,6 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -235,24 +298,22 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30</lifetime>
+                    <lifetime>30d</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Fan speed on {#SNMPVALUE}</name>
                             <type>10</type>
                             <snmp_community/>
-                            <multiplier>0</multiplier>
                             <snmp_oid/>
                             <key>getFanSpeed.rb[{$SNMP_COMMUNITY},{#SNMPINDEX},{HOST.CONN}]</key>
                             <delay>60</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -260,11 +321,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -280,18 +338,57 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
                     <graph_prototypes/>
                     <host_prototypes/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Temperature sensors</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.2</snmp_oid>
+                    <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.2.3.51.3.1.1.2.1.2]</snmp_oid>
                     <key>sensorDesc</key>
                     <delay>3600</delay>
                     <status>0</status>
@@ -303,7 +400,6 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -317,24 +413,22 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30</lifetime>
+                    <lifetime>30d</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Critical Limit Temperature on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.6.{#SNMPINDEX}</snmp_oid>
                             <key>tempCritLimitHigh[{#SNMPVALUE}]</key>
                             <delay>3600</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -342,11 +436,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -362,23 +453,42 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Nominal temperature on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>tempNominalReading[{#SNMPVALUE}]</key>
-                            <delay>3600</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <delay>3600;50/1-7,00:00-24:00</delay>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -386,11 +496,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex>50/1-7,00:00-24:00</delay_flex>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -406,23 +513,42 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Non-Critical Limit Temperature on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.7.{#SNMPINDEX}</snmp_oid>
                             <key>tempNonCritLimitHigh[{#SNMPVALUE}]</key>
                             <delay>3600</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -430,11 +556,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -450,23 +573,42 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Non-recovery temperature on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.5.{#SNMPINDEX}</snmp_oid>
                             <key>tempNonRecovLimitHigh[{#SNMPVALUE}]</key>
                             <delay>3600</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -474,11 +616,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -494,23 +633,42 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Temperature on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.1.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>tempReading[{#SNMPVALUE}]</key>
                             <delay>120</delay>
-                            <history>90</history>
-                            <trends>730</trends>
+                            <history>90d</history>
+                            <trends>730d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -518,11 +676,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -538,49 +693,154 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes>
                         <trigger_prototype>
                             <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].last(#1)}&gt;{Template IBM - IMM2 SNMP:tempCritLimitHigh[{#SNMPVALUE}].last(#1)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
                             <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>4</priority>
-                            <description>Температура на {HOST.NAME} на сенсоре {#SNMPVALUE} больше чем Критичное значение!</description>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than Critical value!</description>
                             <type>0</type>
+                            <manual_close>0</manual_close>
                             <dependencies/>
+                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].last(#1)}&gt;{Template IBM - IMM2 SNMP:tempNonRecovLimitHigh[{#SNMPVALUE}].last(#1)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
                             <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>5</priority>
-                            <description>Температура на {HOST.NAME} на сенсоре {#SNMPVALUE} больше чем значение, после которого ничего нельзя будет восстановить!!!</description>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than the non recovery high limit</description>
                             <type>0</type>
+                            <manual_close>0</manual_close>
                             <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].min(#3)}&gt;{Template IBM - IMM2 SNMP:tempCritLimitHigh[{#SNMPVALUE}].max(#10)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>1</status>
+                            <priority>4</priority>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than Critical value!</description>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].min(#3)}&gt;{Template IBM - IMM2 SNMP:tempNonRecovLimitHigh[{#SNMPVALUE}].max(#10)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>1</status>
+                            <priority>5</priority>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than the non recovery high limit</description>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
                         </trigger_prototype>
                         <trigger_prototype>
                             <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].last(#1)}&gt;{Template IBM - IMM2 SNMP:tempNonCritLimitHigh[{#SNMPVALUE}].last(#1)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
                             <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Non-Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
                             <url/>
                             <status>0</status>
                             <priority>2</priority>
-                            <description>Температура на {HOST.NAME} на сенсоре {#SNMPVALUE} больше чем некритичное значение!</description>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than non-critical value!</description>
                             <type>0</type>
+                            <manual_close>0</manual_close>
                             <dependencies/>
+                            <tags/>
+                        </trigger_prototype>
+                        <trigger_prototype>
+                            <expression>{Template IBM - IMM2 SNMP:tempReading[{#SNMPVALUE}].min(#3)}&gt;{Template IBM - IMM2 SNMP:tempNonCritLimitHigh[{#SNMPVALUE}].max(#10)}</expression>
+                            <recovery_mode>0</recovery_mode>
+                            <recovery_expression/>
+                            <name>Temperature {HOST.NAME} on {#SNMPVALUE} is Non-Critical</name>
+                            <correlation_mode>0</correlation_mode>
+                            <correlation_tag/>
+                            <url/>
+                            <status>1</status>
+                            <priority>2</priority>
+                            <description>The temperature on {HOST.NAME} on the sensor {#SNMPVALUE} is greater than non-critical value!</description>
+                            <type>0</type>
+                            <manual_close>0</manual_close>
+                            <dependencies/>
+                            <tags/>
                         </trigger_prototype>
                     </trigger_prototypes>
                     <graph_prototypes/>
                     <host_prototypes/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
                 <discovery_rule>
                     <name>Voltage sensors</name>
                     <type>1</type>
                     <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                    <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.2.2.1.2</snmp_oid>
+                    <snmp_oid>discovery[{#SNMPVALUE},1.3.6.1.4.1.2.3.51.3.1.2.2.1.2]</snmp_oid>
                     <key>voltageDesc</key>
                     <delay>3600</delay>
                     <status>0</status>
@@ -592,7 +852,6 @@
                     <snmpv3_authpassphrase/>
                     <snmpv3_privprotocol>0</snmpv3_privprotocol>
                     <snmpv3_privpassphrase/>
-                    <delay_flex/>
                     <params/>
                     <ipmi_sensor/>
                     <authtype>0</authtype>
@@ -606,24 +865,22 @@
                         <formula/>
                         <conditions/>
                     </filter>
-                    <lifetime>30</lifetime>
+                    <lifetime>30d</lifetime>
                     <description/>
                     <item_prototypes>
                         <item_prototype>
                             <name>Nominal Voltage on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.2.2.1.4.{#SNMPINDEX}</snmp_oid>
                             <key>voltNominalReading[{#SNMPVALUE}]</key>
                             <delay>3600</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -631,11 +888,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -651,23 +905,42 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                         <item_prototype>
                             <name>Voltage on {#SNMPVALUE}</name>
                             <type>1</type>
                             <snmp_community>{$SNMP_COMMUNITY}</snmp_community>
-                            <multiplier>0</multiplier>
                             <snmp_oid>1.3.6.1.4.1.2.3.51.3.1.2.2.1.3.{#SNMPINDEX}</snmp_oid>
                             <key>voltReading[{#SNMPVALUE}]</key>
                             <delay>120</delay>
-                            <history>7</history>
-                            <trends>365</trends>
+                            <history>7d</history>
+                            <trends>365d</trends>
                             <status>0</status>
                             <value_type>3</value_type>
                             <allowed_hosts/>
                             <units/>
-                            <delta>0</delta>
                             <snmpv3_contextname/>
                             <snmpv3_securityname/>
                             <snmpv3_securitylevel>0</snmpv3_securitylevel>
@@ -675,11 +948,8 @@
                             <snmpv3_authpassphrase/>
                             <snmpv3_privprotocol>0</snmpv3_privprotocol>
                             <snmpv3_privpassphrase/>
-                            <formula>1</formula>
-                            <delay_flex/>
                             <params/>
                             <ipmi_sensor/>
-                            <data_type>0</data_type>
                             <authtype>0</authtype>
                             <username/>
                             <password/>
@@ -695,14 +965,54 @@
                             </applications>
                             <valuemap/>
                             <logtimefmt/>
+                            <preprocessing/>
+                            <jmx_endpoint/>
+                            <timeout>3s</timeout>
+                            <url/>
+                            <query_fields/>
+                            <posts/>
+                            <status_codes>200</status_codes>
+                            <follow_redirects>1</follow_redirects>
+                            <post_type>0</post_type>
+                            <http_proxy/>
+                            <headers/>
+                            <retrieve_mode>0</retrieve_mode>
+                            <request_method>0</request_method>
+                            <output_format>0</output_format>
+                            <allow_traps>0</allow_traps>
+                            <ssl_cert_file/>
+                            <ssl_key_file/>
+                            <ssl_key_password/>
+                            <verify_peer>0</verify_peer>
+                            <verify_host>0</verify_host>
                             <application_prototypes/>
+                            <master_item/>
                         </item_prototype>
                     </item_prototypes>
                     <trigger_prototypes/>
                     <graph_prototypes/>
                     <host_prototypes/>
+                    <jmx_endpoint/>
+                    <timeout>3s</timeout>
+                    <url/>
+                    <query_fields/>
+                    <posts/>
+                    <status_codes>200</status_codes>
+                    <follow_redirects>1</follow_redirects>
+                    <post_type>0</post_type>
+                    <http_proxy/>
+                    <headers/>
+                    <retrieve_mode>0</retrieve_mode>
+                    <request_method>0</request_method>
+                    <allow_traps>0</allow_traps>
+                    <ssl_cert_file/>
+                    <ssl_key_file/>
+                    <ssl_key_password/>
+                    <verify_peer>0</verify_peer>
+                    <verify_host>0</verify_host>
                 </discovery_rule>
             </discovery_rules>
+            <httptests/>
             <macros/>
             <templates/>
             <screens/>
@@ -710,34 +1020,100 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=2</expression>
+            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last()}=0</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>System state {HOST.NAME} is Critical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>5</priority>
+            <description>Системное состояние на хосте Критичное, посмотреть что там!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=2</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>System state {HOST.NAME} is Critical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>4</priority>
             <description>Системное состояние на хосте Критичное, посмотреть что там!</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last()}=2</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>System state {HOST.NAME} is nonCritical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>1</status>
+            <priority>3</priority>
+            <description>Системное состояние на хосте НеКритичное (но плохое), посмотреть что там!</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=4</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>System state {HOST.NAME} is nonCritical</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>3</priority>
             <description>Системное состояние на хосте НеКритичное (но плохое), посмотреть что там!</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
         </trigger>
         <trigger>
             <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last(0)}=0</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
             <name>System state {HOST.NAME} is nonRecoverable</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
             <url/>
             <status>0</status>
             <priority>5</priority>
             <description>Системное состояние на хосте NonRecoverable, все очень плохо...</description>
             <type>0</type>
+            <manual_close>0</manual_close>
             <dependencies/>
+            <tags/>
+        </trigger>
+        <trigger>
+            <expression>{Template IBM - IMM2 SNMP:systemHealthStat.last()}=4</expression>
+            <recovery_mode>0</recovery_mode>
+            <recovery_expression/>
+            <name>System state {HOST.NAME} is systemLevel</name>
+            <correlation_mode>0</correlation_mode>
+            <correlation_tag/>
+            <url/>
+            <status>0</status>
+            <priority>2</priority>
+            <description>Системное состояние на хосте NonRecoverable, все очень плохо...</description>
+            <type>0</type>
+            <manual_close>0</manual_close>
+            <dependencies/>
+            <tags/>
         </trigger>
     </triggers>
     <value_maps>
